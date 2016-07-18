@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>World of Warcraft</title>  
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<link href="../css/style.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+	<style>#footer{background:#2e3f50}</style>
+</head>
+<body id="project">
+<div id="header">
+	<img id="logo" src="../img/logo.png" alt="Stephen Wong"/>
+	<ul id="menu"><li><a href="../index.html">home</a></li><li><a href="../index.html#banner">about me</a></li><li><a href="../index.html#portfolio">portfolio</a></li><li><a href="../index.html#resume">resume</a></li><li><a href="../index.html#contact">contact</a></li></ul>
+	<img id="mnu" src="../img/menu.png" alt=""/>
+</div>
+
+<section>
+
+	<!-- <div class="w3-content" style="max-width:800px"> -->
+
+    <img class="mySlides" src="worldofwarcraft.png" style="width:50%">
+
+	<h2>World of Warcraft</h2><br>
+	<h2>Role: Lead System Administrator</h2><br>
+	<p><ul>
+		<li>Founding member of Blizzard's legendary BONS team.</li>
+		<li>I was the first World of Warcraft System Administrator.</li>
+		<li>Built all but one of the data centers for World of Warcraft.  </li>
+		<li>Provided 24x7 global support</li>
+		<li>Highest level troubeshooter</li>
+		<li>Fun fact.  I ran the command to launch World of Warcraft worldwide. </li>
+	</ul></p>
+
+</section>
+
+
+<script src="project.js" ></script>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+// 
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-grey", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-grey";
+}
+</script>
+</body>
+</html>

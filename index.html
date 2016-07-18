@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Stephen Wong</title>  
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="header">
+	<img id="logo" src="img/logo.png" alt="Stephen Wong"/>
+	<ul id="menu"><li><a href="index.html">home</a></li><li><a href="#banner" id="m1">about me</a></li><li><a href="#portfolio" id="m2">portfolio</a></li><li><a href="#resume" id="m3">resume</a></li><li><a href="#contact" id="m4">contact</a></li></ul>
+	<img id="mnu" src="img/menu.png" alt=""/>
+</div>
+
+<div id="banner">
+	<img id="face" src="img/banner.jpg" alt=""/>
+	<div id="aboutDevOps">
+		<h2>DevOps</h2>
+		<p>Service Desk Support, Consultant, Academic Technology specialist, Devops Engineer, System Administrator (Sr., Lead, Supervisor, etc), Operations Architect, Director of Information Technology.  I have been defined by various titles over my 25 year history in the field of Information Technology.  Rather than dwelling on formal titles, let’s frame the discussion a different way.  I managed a single servers for small business to overseeing a team that manages over twenty four thousand plus spread over eleven data centers.  I administrator image servers to deploy desktop endpoints, converted several dozens physical servers to virtualized machines and I architected auto scaling web platforms on AWS.  I enjoy writing BASH scripts and Batch scripts for automating system tasks, I development custom projects using the MEAN stack most recently for natural language processing and support vector machine classifiers. I install, interact, administrator SQL, NoSQL databases, backend services and create front end applications using multiple javascript frameworks.</p>
+	</div>
+	<div id="aboutITSM">
+		<h2>ITSM</h2>
+		<p>Having held leadership positions in organizations ranging from corporations, higher education to small business, I understand the importance of offering high quality services to clients.  </p>
+	</div>
+	<img id="btnDevOps" src="img/devops.png" alt=""/>
+	<img id="btnITSM" src="img/itsm.png" alt=""/>
+	<img id="btnLeft" src="img/arrow.png" alt=""/>
+	<img id="btnRight" src="img/arrow.png" alt=""/>
+</div>
+
+	<div id="page">
+	<h2>about me</h2>
+	<div id="about">
+			<p>A native Californian, I was raised in the urban suburbs of Los Angeles and now spent my life enjoying the wonderful weather of the Bay Area.   I attended school under the majestic Santa Cruz redwoods where I learned about computer science.  However, this was not where my passion for technology began.  Rather my passion has spanned nearly my entire lifetime starting during my first single digits of life.  Now I’m interested in all forms of information technology, from its early root to how futurist trends will influence our everyday life and individual identity.</p>
+	</div>
+</div>
+<div >
+	<div id="portfolio">
+		<h2>latest work</h2>
+		<div>
+			<img src="projects/digitalmedicalrecords.jpg" alt=""/>
+			<div>
+				<h3>Digital Medical Records</h3>
+				<p>Implemented a Digital Medical Record server as a service onto the cloud.  Setup secure access, enable high availability and a disaster recording model.<br/>
+					<br/><br/><br/>
+				<a href="projects/stwong_blog.html">view project</a>
+				<p>
+			</div>
+		</div>
+		<div>
+			<img src="projects/stwong_blog.png" alt=""/>
+			<div>
+				<h3>Personal Blog</h3>
+				<p>Personal Wordpress blog running on a VM CentOS hosted on a cloud vendor.  I blog on topics ranging from IT, life moments and civil issues.  More than 4,000 unique visitors per month. <br/>
+					<br/><br/><br/>
+				<a href="projects/stwong_blog.html">view project</a>
+				<p>
+			</div>
+		</div>
+		<div>
+			<img src="projects/wow_burning_crusade.jpg" alt=""/>
+			<div>
+				<h3>World of Warcraft Burning Crusade</h3>
+				<p>Founding member of Blizzard's legendary BONS team.  I was their first system administrator.  Built all but one of the data centers for World of Warcraft.  Fun fact.  I ran the command to launch World of Warcraft worldwide. <br/>
+					<br/><br/><br/>
+				<a href="projects/wow_burning_crusade.html">view project</a>
+				<p>
+			</div>
+		</div>
+		<div>
+			<img src="projects/worldofwarcraft.png" alt=""/>
+			<div>
+				<h3>World of Warcraft</h3>
+				<p>Founding member of Blizzard's legendary BONS team.  I was their first system administrator.  Built all but one of the data centers for World of Warcraft.  Fun fact.  I ran the command to launch World of Warcraft worldwide. <br/>
+					<br/><br/><br/>
+				<a href="projects/worldofwarcraft.html">view project</a>
+				<p>
+			</div>
+		</div>
+		<div>
+			<img src="projects/ucsc.jpg" alt=""/>
+			<div>
+				<h3>UCSC IT</h3>
+				<p>Worked for the University IT team for four years as a student worker.  Maintained and supported all the University IT computer labs.  I had the highest position within the IT team as a student worker.<br/>
+					<br/><br/><br/>
+				<a href="projects/ucsc.html">view project</a>
+				<p>
+			</div>
+		</div>
+
+		
+		
+	</div>
+	<div id="resume">
+		<h2>resume</h2>
+		<a href="img/resume.pdf" download="resume.pdf"><img src="img/btnresume.png" alt=""/><img src="img/btndownload.png" alt=""/></a>
+	</div>
+	<div id="contact">
+		<h2>contact me</h2>
+		<div id="msg"></div>
+		<form onsubmit="return validate(this)">
+			<table>
+				<tr><td><label>First Name</label></td>	<td><input name="fname" type="text" value=""/></td>	<td><label>Email</label></td>		<td><input name="email" type="hidden" value=""/><input name="level" type="text" value=""/></td></tr>
+				<tr><td><label>Last Name</label></td>	<td><input name="lname" type="text" value=""/></td>	<td><label>Company</label></td>	<td><input name="company" type="text" value=""/></td></tr>
+				<tr><td colspan="4" style="text-align:left"><label>Message</label><textarea name="message"></textarea></td></tr>
+				<tr><td colspan="4" id="td"><button value="submit">Submit</button></td></tr>
+			</table>
+		</form>
+	</div>
+</div>
+<div id="footer"><!-- &copy; Copyright 2016 --></div>
+
+<script src="js/main.js" ></script>
+<script src="js/jquery-1.12.2.min.js" ></script>
+
+</body>
+</html>
